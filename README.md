@@ -18,7 +18,7 @@ A utility for detecting and patching AV/EDR hooks.
 ## Getting started
 ### Compiling
 To compile `zlo`, simply execute the following script:
-- `build.bat`
+- `build.bat` (Make sure you have the MinGW Compiler installed and you have set the PATH variable!)
 
 ### Usage
 - `zlo.exe`
