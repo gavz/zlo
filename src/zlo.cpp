@@ -271,11 +271,11 @@ auto main(void) -> std::int32_t {
       Scanner().CheckJmpHook("kernel32.dll", function);
 
   if (!kernelbaseFunctions.empty())
-    for (auto function: kernelFunctions)
+    for (auto function: kernelbaseFunctions)
       Scanner().CheckJmpHook("kernelbase.dll", function);
 
   if (!msvcrtFunctions.empty())
-    for (auto function: kernelFunctions)
+    for (auto function: msvcrtFunctions)
       Scanner().CheckJmpHook("msvcrt.dll", function);
 
   if (Scanner().PatchTargetDLL("ntdll.dll") && Scanner().PatchTargetDLL("kernel32.dll") && Scanner().PatchTargetDLL("kernelbase.dll") && Scanner().PatchTargetDLL("msvcrt.dll"))
