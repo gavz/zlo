@@ -6,7 +6,7 @@ A utility for detecting and patching AV/EDR hooks.
 </div>
 
 ## Description
-`zlo` Is an AV/EDR hooking detection utility that attempts to userland hooks by dumping functions from several DLLs and checking the opcodes.
+`zlo` Is an AV/EDR hooking detection utility that attempts to detect userland hooks by dumping functions from several DLLs and checking the opcodes.
 
 ### Features
 - Patches hooks (if found)
